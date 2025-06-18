@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM para vos</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <h1 class="logo">STEM para vos</h1>
+                <ul class="nav-menu">
+                    <li><a href="#carreras" class="nav-link">Carreras</a></li>
+                    <li><a href="#vida-diaria" class="nav-link">STEM cotidiano</a></li>
+                    <li><a href="#test" class="nav-link">Test</a></li>
+                    <li><a href="#recursos" class="nav-link">Recursos</a></li>
+                    <li><a href="#universidades" class="nav-link">Universidades</a></li>
+                </ul>
+                <button class="cta-button" onclick="scrollToTest()">Hacete el test</button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="hero">
+            <div class="hero-content">
+                <h2 class="hero-title">Descubrí tu futuro en STEM</h2>
+                <p class="hero-subtitle">Ciencia, Tecnología, Ingeniería y Matemática te esperan. ¡Es tu momento de brillar!</p>
+                <button class="hero-cta" onclick="scrollToTest()">
+                    <i class="fas fa-rocket"></i>
+                    Empezá ahora
+                </button>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-icons">
+                    <!-- Ecuaciones matemáticas y científicas -->
+                    <i class="floating-particle equation equation-1">E=mc²</i>
+                    <i class="floating-particle equation equation-2">∑x²</i>
+                    <i class="floating-particle equation equation-3">∫f(x)dx</i>
+                    <i class="floating-particle equation equation-4">π²/6</i>
+
+                    <!-- Íconos STEM -->
+                    <i class="floating-particle stem-icon icon-1">⚛️</i>
+                    <i class="floating-particle stem-icon icon-2">🧬</i>
+                    <i class="floating-particle stem-icon icon-3">⚙️</i>
+                    <i class="floating-particle stem-icon icon-4">🔬</i>
+                
+                    <!-- Más íconos -->
+                    <i class="floating-particle stem-icon" style="top: 45%; right: 5%; animation-delay: 3.2s; font-size: 2.3rem;">🧪</i>
+                    <i class="floating-particle stem-icon" style="bottom: 25%; right: 50%; animation-delay: 7.5s; font-size: 2.1rem;">💻</i>
+                    <i class="floating-particle stem-icon" style="top: 10%; left: 45%; animation-delay: 2.8s; font-size: 1.9rem;">🤖</i>
+                    <i class="floating-particle stem-icon" style="bottom: 15%; left: 70%; animation-delay: 5.8s; font-size: 2.4rem;">🚀</i>
+                    <i class="floating-particle stem-icon" style="top: 75%; right: 75%; animation-delay: 4.2s; font-size: 2rem;">📊</i>
+                </div>
+            </div>
+        </div>
+    </header> 
+
+    <!-- Sección 1: Carreras STEM -->
+    <section id="carreras" class="carreras-section">
+        <div class="container">
+            <h2 class="section-title">Carreras STEM que pueden cambiar tu vida</h2>
+            <p class="section-subtitle">Explorá las infinitas posibilidades que te esperan</p>
+            
+            <div class="carreras-grid">
+                <div class="carrera-card">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Ingeniería en Sistemas</h3>
+                    <p>Diseñá y desarrollá software que transforme el mundo digital.</p>
+                    <div class="salidas">
+                        <strong>Salidas laborales:</strong>
+                        <ul>
+                            <li>Desarrolladora de software</li>
+                            <li>Analista de sistemas</li>
+                            <li>Arquitecta de soluciones</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="carrera-card">
+                    <div class="card-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Biotecnología</h3>
+                    <p>Combiná biología y tecnología para crear soluciones innovadoras.</p>
+                    <div class="salidas">
+                        <strong>Salidas laborales:</strong>
+                        <ul>
+                            <li>Investigadora biomédica</li>
+                            <li>Especialista en bioinformática</li>
+                            <li>Consultora ambiental</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="carrera-card">
+                    <div class="card-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Matemática</h3>
+                    <p>Resolvé problemas complejos con el poder de los números.</p>
+                    <div class="salidas">
+                        <strong>Salidas laborales:</strong>
+                        <ul>
+                            <li>Analista de datos</li>
+                            <li>Actuaria</li>
+                            <li>Investigadora científica</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="carrera-card">
+                    <div class="card-icon">
+                        <i class="fas fa-atom"></i>
+                    </div>
+                    <h3>Física</h3>
+                    <p>Entendé las leyes fundamentales del universo.</p>
+                    <div class="salidas">
+                        <strong>Salidas laborales:</strong>
+                        <ul>
+                            <li>Física médica</li>
+                            <li>Investigación espacial</li>
+                            <li>Energías renovables</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="carrera-card">
+                    <div class="card-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Química</h3>
+                    <p>Transformá la materia para crear nuevos materiales y medicamentos.</p>
+                    <div class="salidas">
+                        <strong>Salidas laborales:</strong>
+                        <ul>
+                            <li>Química farmacéutica</li>
+                            <li>Ingeniería de procesos</li>
+                            <li>Control de calidad</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="carrera-card">
+                    <div class="card-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Ingeniería Industrial</h3>
+                    <p>Optimizá procesos y sistemas para máxima eficiencia.</p>
+                    <div class="salidas">
+                        <strong>Salidas laborales:</strong>
+                        <ul>
+                            <li>Consultora de procesos</li>
+                            <li>Gerenta de operaciones</li>
+                            <li>Analista de productividad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 2: STEM en tu vida diaria -->
+    <section id="vida-diaria" class="vida-diaria-section">
+        <div class="container">
+            <h2 class="section-title">STEM en tu vida cotidiana</h2>
+            <p class="section-subtitle">La ciencia y tecnología están en todos lados, ¡descubrí cómo!</p>
+            
+            <div class="vida-diaria-grid">
+                <div class="vida-card">
+                    <div class="vida-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Tu smartphone</h3>
+                    <p>Cada vez que tocás la pantalla, sensores capacitivos detectan el cambio eléctrico. Los algoritmos de IA predicen qué querés escribir y las ondas electromagnéticas conectan tu mensaje al mundo.</p>
+                </div>
+
+                <div class="vida-card">
+                    <div class="vida-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>GPS y mapas</h3>
+                    <p>Satélites en órbita envían señales que tu dispositivo calcula usando matemáticas complejas. ¡La relatividad de Einstein es clave para que llegues a tiempo!</p>
+                </div>
+
+                <div class="vida-card">
+                    <div class="vida-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Medicina moderna</h3>
+                    <p>Desde resonancias magnéticas hasta análisis de ADN, la biotecnología y física médica salvan vidas todos los días.</p>
+                </div>
+
+                <div class="vida-card">
+                    <div class="vida-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Energía sostenible</h3>
+                    <p>Paneles solares convierten luz en electricidad usando el efecto fotovoltaico. La ingeniería hace posible un futuro más verde.</p>
+                </div>
+
+                <div class="vida-card">
+                    <div class="vida-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Compras online</h3>
+                    <p>Algoritmos de recomendación, criptografía para pagos seguros y logística optimizada. ¡Todo es matemática y programación!</p>
+                </div>
+
+                <div class="vida-card">
+                    <div class="vida-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Inteligencia Artificial</h3>
+                    <p>Desde filtros de fotos hasta asistentes virtuales, la IA usa redes neuronales inspiradas en nuestro cerebro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 3: Mini test vocacional -->
+    <section id="test" class="test-section">
+        <div class="container">
+            <h2 class="section-title">¿Cuál es tu perfil STEM?</h2>
+            <p class="section-subtitle">Respondé estas preguntas y descubrí qué área te conviene más</p>
+            
+            <div class="test-container">
+                <div id="test-questions" class="test-questions">
+                    <!-- Las preguntas se generan dinámicamente con JavaScript -->
+                </div>
+                
+                <div id="test-result" class="test-result hidden">
+                    <h3 id="result-title"></h3>
+                    <p id="result-description"></p>
+                    <div id="result-careers"></div>
+                    <button class="restart-btn" onclick="restartTest()">Hacer el test de nuevo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 4: Recursos útiles -->
+    <section id="recursos" class="recursos-section">
+        <div class="container">
+            <h2 class="section-title">Recursos para empezar tu camino</h2>
+            <p class="section-subtitle">Todo lo que necesitás para dar tus primeros pasos en STEM</p>
+            
+            <div class="recursos-grid">
+                <div class="recurso-category">
+                    <h3><i class="fas fa-graduation-cap"></i> Cursos gratuitos</h3>
+                    <ul>
+                        <li><a href="#" target="_blank">Coursera - Introducción a la Programación</a></li>
+                        <li><a href="#" target="_blank">Khan Academy - Matemática y Ciencias</a></li>
+                        <li><a href="#" target="_blank">edX - Cursos de MIT y Harvard</a></li>
+                        <li><a href="#" target="_blank">Codecademy - Programación interactiva</a></li>
+                    </ul>
+                </div>
+
+                <div class="recurso-category">
+                    <h3><i class="fas fa-award"></i> Becas y oportunidades</h3>
+                    <ul>
+                        <li><a href="#" target="_blank">Becas Progresar - Gobierno Nacional</a></li>
+                        <li><a href="#" target="_blank">Programa Igualdad de Oportunidades - UBA</a></li>
+                        <li><a href="#" target="_blank">Girls in Tech Argentina</a></li>
+                        <li><a href="#" target="_blank">Women in STEM - UNESCO</a></li>
+                    </ul>
+                </div>
+
+                <div class="recurso-category">
+                    <h3><i class="fas fa-book"></i> Libros recomendados</h3>
+                    <ul>
+                        <li>"Las chicas son de ciencias" - Irene Cívico</li>
+                        <li>"Mujeres de ciencia" - Rachel Ignotofsky</li>
+                        <li>"El gen egoísta" - Richard Dawkins</li>
+                        <li>"Pensar rápido, pensar despacio" - Daniel Kahneman</li>
+                    </ul>
+                </div>
+
+                <div class="recurso-category">
+                    <h3><i class="fas fa-podcast"></i> Podcasts y videos</h3>
+                    <ul>
+                        <li><a href="#" target="_blank">Cienciaes - Podcast científico</a></li>
+                        <li><a href="#" target="_blank">TED Talks - Mujeres en STEM</a></li>
+                        <li><a href="#" target="_blank">YouTube - Date un Voltio</a></li>
+                        <li><a href="#" target="_blank">Spotify - Científicamente</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección 5: Universidades -->
+    <section id="universidades" class="universidades-section">
+        <div class="container">
+            <h2 class="section-title">Universidades argentinas con carreras STEM</h2>
+            <p class="section-subtitle">Encontrá la institución perfecta para tu futuro</p>
+            
+            <div class="universidades-grid">
+                <div class="uni-card">
+                    <h3>Universidad de Buenos Aires (UBA)</h3>
+                    <p>Facultades de Ciencias Exactas, Ingeniería y Medicina</p>
+                    <div class="uni-info">
+                        <span class="uni-type">Pública</span>
+                        <span class="uni-location">CABA</span>
+                    </div>
+                </div>
+
+                <div class="uni-card">
+                    <h3>Universidad Tecnológica Nacional (UTN)</h3>
+                    <p>Especializada en ingeniería y tecnología</p>
+                    <div class="uni-info">
+                        <span class="uni-type">Pública</span>
+                        <span class="uni-location">Nacional</span>
+                    </div>
+                </div>
+
+                <div class="uni-card">
+                    <h3>Universidad Nacional de La Plata (UNLP)</h3>
+                    <p>Facultades de Ciencias Exactas, Ingeniería e Informática</p>
+                    <div class="uni-info">
+                        <span class="uni-type">Pública</span>
+                        <span class="uni-location">La Plata</span>
+                    </div>
+                </div>
+
+                <div class="uni-card">
+                    <h3>Universidad Nacional de Córdoba (UNC)</h3>
+                    <p>Facultad de Matemática, Astronomía, Física y Computación</p>
+                    <div class="uni-info">
+                        <span class="uni-type">Pública</span>
+                        <span class="uni-location">Córdoba</span>
+                    </div>
+                </div>
+
+                <div class="uni-card">
+                    <h3>Instituto Tecnológico de Buenos Aires (ITBA)</h3>
+                    <p>Universidad privada enfocada en ingeniería y tecnología</p>
+                    <div class="uni-info">
+                        <span class="uni-type">Privada</span>
+                        <span class="uni-location">CABA</span>
+                    </div>
+                </div>
+
+                <div class="uni-card">
+                    <h3>Universidad Austral</h3>
+                    <p>Facultad de Ingeniería y Ciencias Exactas</p>
+                    <div class="uni-info">
+                        <span class="uni-type">Privada</span>
+                        <span class="uni-location">Buenos Aires</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Explora STEM</h3>
+                    <p>Impulsando a las mujeres hacia un futuro brillante en ciencia y tecnología.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Conectate</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>📧 hola@stemparavos.com</p>
+                    <p>📱 +54 11 1234-5678</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>Hecho con 💜</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
