@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carreras STEM para Mujeres</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/carreras.css">
+</head>
+<body>
+    <div class="animated-bg">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <h1 class="main-title" id="mainTitle"></h1>
+            <p class="subtitle">Descubre tu camino hacia el futuro de la tecnología y la ciencia</p>
+        </div>
+
+        <div class="careers-grid" id="careersGrid">
+            <!-- Las tarjetas se generarán dinámicamente -->
+        </div>
+    </div>
+
+    <div class="modal" id="careerModal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeModal">&times;</span>
+            <div class="modal-header">
+                <div class="modal-icon" id="modalIcon"></div>
+                <h2 class="modal-title" id="modalTitle"></h2>
+            </div>
+            <div id="modalBody">
+                <!-- El contenido del modal se genera dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <div class="feedback-message" id="feedbackMessage"></div>
+
+    <script src="js/carreras.js"></script>
+</body>
+<nav class="top-nav">
+  <a href="index.html">🏠 Inicio</a>
+  <a href="foro.html">💬 Foro</a>
+</nav>
+
+</html>
