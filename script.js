@@ -509,3 +509,66 @@ window.addEventListener('load', function() {
     // Trackear que la página cargó completamente
     console.log('STEM para vos - Sitio cargado completamente');
 });
+
+// Smooth scroll para el botón CTA
+document.getElementById('exploreBtn').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Animación de click en el botón
+    this.style.transform = 'scale(0.95)';
+    setTimeout(() => {
+        this.style.transform = 'translateY(-3px) scale(1.05)';
+    }, 150);
+    
+    // Smooth scroll (preparado para cuando agregues la sección de carreras)
+    const targetSection = document.querySelector('#carreras');
+    if (targetSection) {
+        targetSection.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+    } else {
+        // Por ahora, scroll suave hacia abajo
+        window.scrollBy({
+            top: window.innerHeight,
+            behavior: 'smooth'
+        });
+    }
+});
+
+// Parallax efecto sutil en el scroll
+window.addEventListener('scroll', function() {
+    const scrolled = window.pageYOffset;
+    const parallaxElements = document.querySelectorAll('.floating-elements .floating-particle');
+    const animatedSvg = document.querySelector('.animated-svg');
+    
+    parallaxElements.forEach((element, index) => {
+        const speed = 0.05 + (index * 0.01);
+        element.style.transform = `translateY(${scrolled * speed}px)`;
+    });
+    
+    if (animatedSvg) {
+        animatedSvg.style.transform = `translate(-50%, -50%) translateY(${scrolled * 0.1}px)`;
+    }
+});
+
+// Animación de entrada mejorada
+window.addEventListener('load', function() {
+    const heroContent = document.querySelector('.hero-content');
+    heroContent.style.opacity = '0';
+    heroContent.style.transform = 'translateY(50px)';
+    
+    setTimeout(() => {
+        heroContent.style.transition = 'all 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+        heroContent.style.opacity = '1';
+        heroContent.style.transform = 'translateY(0)';
+    }, 200);
+});
+
+// Easter egg: click en el título para animación especial
+document.querySelector('.hero-title').addEventListener('click', function() {
+    this.style.animation = 'none';
+    setTimeout(() => {
+        this.style.animation = 'titleGlow 2s ease-in-out infinite alternate, bounceIn 0.6s ease-out';
+    }, 10);
+});
