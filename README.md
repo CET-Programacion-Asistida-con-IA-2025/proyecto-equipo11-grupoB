@@ -62,7 +62,6 @@ STEM-para-Vos/
 ### 🎓 Carreras STEM
 - **Tarjetas interactivas** con información detallada de cada carrera
 - **Salidas laborales** y oportunidades profesionales
-- **Referentes femeninas** exitosas en cada área
 
 ### 🌍 STEM en tu Vida Diaria
 - **Ejemplos visuales** con efecto parallax
