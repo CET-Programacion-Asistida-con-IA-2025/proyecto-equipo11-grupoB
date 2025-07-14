@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STEM para vos</title>
     <!-- Enlace a la hoja de estilos CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Font Awesome para íconos -->
@@ -18,11 +18,12 @@
             <div class="nav-container">
                 <h1 class="logo">STEM para vos</h1>
                 <ul class="nav-menu">
-                    <li><a href="#carreras" class="nav-link">Carreras</a></li>
+                    <li><a href="carreras.html" class="nav-link">Explorar Carreras</a></li>
                     <li><a href="#vida-diaria" class="nav-link">STEM cotidiano</a></li>
                     <li><a href="#test" class="nav-link">Test</a></li>
                     <li><a href="#recursos" class="nav-link">Recursos</a></li>
                     <li><a href="#universidades" class="nav-link">Universidades</a></li>
+                    <li><a href="foro.html" class="nav-link">Foro</a></li>
                 </ul>
                 <button class="cta-button" onclick="scrollToTest()">Hacete el test</button>
                 <div class="hamburger">
@@ -33,145 +34,143 @@
             </div>
         </nav>
         
-        <div class="hero">
-            <div class="hero-content">
-                <h2 class="hero-title">Descubrí tu futuro en STEM</h2>
-                <p class="hero-subtitle">Ciencia, Tecnología, Ingeniería y Matemática te esperan. ¡Es tu momento de brillar!</p>
-                <button class="hero-cta" onclick="scrollToTest()">
-                    <i class="fas fa-rocket"></i>
-                    Empezá ahora
-                </button>
-            </div>
-            <div class="hero-visual">
-                <div class="floating-icons">
-                    <!-- Ecuaciones matemáticas y científicas -->
-                    <i class="floating-particle equation equation-1">E=mc²</i>
-                    <i class="floating-particle equation equation-2">∑x²</i>
-                    <i class="floating-particle equation equation-3">∫f(x)dx</i>
-                    <i class="floating-particle equation equation-4">π²/6</i>
-
-                    <!-- Íconos STEM -->
-                    <i class="floating-particle stem-icon icon-1">⚛️</i>
-                    <i class="floating-particle stem-icon icon-2">🧬</i>
-                    <i class="floating-particle stem-icon icon-3">⚙️</i>
-                    <i class="floating-particle stem-icon icon-4">🔬</i>
+            <section class="hero-section">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <!-- Ecuaciones matemáticas y científicas -->
+                <div class="floating-particle equation equation-1">E=mc²</div>
+                <div class="floating-particle equation equation-2">∑x²</div>
+                <div class="floating-particle equation equation-3">∫f(x)dx</div>
+                <div class="floating-particle equation equation-4">π²/6</div>
                 
-                    <!-- Más íconos -->
-                    <i class="floating-particle stem-icon" style="top: 45%; right: 5%; animation-delay: 3.2s; font-size: 2.3rem;">🧪</i>
-                    <i class="floating-particle stem-icon" style="bottom: 25%; right: 50%; animation-delay: 7.5s; font-size: 2.1rem;">💻</i>
-                    <i class="floating-particle stem-icon" style="top: 10%; left: 45%; animation-delay: 2.8s; font-size: 1.9rem;">🤖</i>
-                    <i class="floating-particle stem-icon" style="bottom: 15%; left: 70%; animation-delay: 5.8s; font-size: 2.4rem;">🚀</i>
-                    <i class="floating-particle stem-icon" style="top: 75%; right: 75%; animation-delay: 4.2s; font-size: 2rem;">📊</i>
-                </div>
+                <!-- Más ecuaciones -->
+                <div class="floating-particle equation" style="top: 35%; left: 75%; animation-delay: 7s; font-size: 1.4rem; color: #8B5CF6;">√(-1)</div>
+                <div class="floating-particle equation" style="bottom: 50%; left: 30%; animation-delay: 8s; font-size: 1.1rem; color: #A855F7;">F=ma</div>
+                <div class="floating-particle equation" style="top: 65%; left: 60%; animation-delay: 4.5s; font-size: 1.6rem; color: #C084FC;">λ=c/f</div>
+                <div class="floating-particle equation" style="top: 85%; right: 45%; animation-delay: 6.5s; font-size: 1.3rem; color: #DDD6FE;">∇²φ=0</div>
+                
+                <!-- Íconos STEM -->
+                <div class="floating-particle stem-icon icon-1">⚛️</div>
+                <div class="floating-particle stem-icon icon-2">🧬</div>
+                <div class="floating-particle stem-icon icon-3">⚙️</div>
+                <div class="floating-particle stem-icon icon-4">🔬</div>
+                
+                <!-- Más íconos -->
+                <div class="floating-particle stem-icon" style="top: 45%; right: 5%; animation-delay: 3.2s; font-size: 2.3rem;">🧪</div>
+                <div class="floating-particle stem-icon" style="bottom: 25%; right: 50%; animation-delay: 7.5s; font-size: 2.1rem;">💻</div>
+                <div class="floating-particle stem-icon" style="top: 10%; left: 45%; animation-delay: 2.8s; font-size: 1.9rem;">🤖</div>
+                <div class="floating-particle stem-icon" style="bottom: 15%; left: 70%; animation-delay: 5.8s; font-size: 2.4rem;">🚀</div>
+                <div class="floating-particle stem-icon" style="top: 75%; right: 75%; animation-delay: 4.2s; font-size: 2rem;">📊</div>
+                
+                <!-- Símbolos adicionales -->
+                <div class="floating-particle equation" style="top: 55%; left: 85%; animation-delay: 9s; font-size: 2rem; color: #8B5CF6;">∞</div>
+                <div class="floating-particle equation" style="bottom: 45%; left: 5%; animation-delay: 1.2s; font-size: 1.8rem; color: #A855F7;">≈</div>
+                <div class="floating-particle equation" style="top: 90%; left: 25%; animation-delay: 6.8s; font-size: 1.5rem; color: #C084FC;">∆</div>
+                <div class="floating-particle equation" style="top: 5%; right: 10%; animation-delay: 3.8s; font-size: 1.7rem; color: #DDD6FE;">Φ</div>
+                
+                <!-- Partículas pequeñas -->
+                <div class="floating-particle particle particle-1"></div>
+                <div class="floating-particle particle particle-2"></div>
+                <div class="floating-particle particle particle-3"></div>
+                <div class="floating-particle particle particle-4"></div>
+                <div class="floating-particle particle particle-5"></div>
+                
+                <!-- Más partículas -->
+                <div class="floating-particle particle" style="top: 25%; left: 90%; animation-delay: 2.3s; background: #8B5CF6;"></div>
+                <div class="floating-particle particle" style="bottom: 80%; right: 20%; animation-delay: 7.1s; background: #A855F7;"></div>
+                <div class="floating-particle particle" style="top: 15%; left: 30%; animation-delay: 4.9s; background: #C084FC;"></div>
+                <div class="floating-particle particle" style="bottom: 30%; right: 60%; animation-delay: 8.7s; background: #DDD6FE;"></div>
             </div>
-        </div>
-    </header> 
-
-    <!-- Sección 1: Carreras STEM -->
-    <section id="carreras" class="carreras-section">
-        <div class="container">
-            <h2 class="section-title">Carreras STEM que pueden cambiar tu vida</h2>
-            <p class="section-subtitle">Explorá las infinitas posibilidades que te esperan</p>
             
-            <div class="carreras-grid">
-                <div class="carrera-card">
-                    <div class="card-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Ingeniería en Sistemas</h3>
-                    <p>Diseñá y desarrollá software que transforme el mundo digital.</p>
-                    <div class="salidas">
-                        <strong>Salidas laborales:</strong>
-                        <ul>
-                            <li>Desarrolladora de software</li>
-                            <li>Analista de sistemas</li>
-                            <li>Arquitecta de soluciones</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="carrera-card">
-                    <div class="card-icon">
-                        <i class="fas fa-dna"></i>
-                    </div>
-                    <h3>Biotecnología</h3>
-                    <p>Combiná biología y tecnología para crear soluciones innovadoras.</p>
-                    <div class="salidas">
-                        <strong>Salidas laborales:</strong>
-                        <ul>
-                            <li>Investigadora biomédica</li>
-                            <li>Especialista en bioinformática</li>
-                            <li>Consultora ambiental</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="carrera-card">
-                    <div class="card-icon">
-                        <i class="fas fa-calculator"></i>
-                    </div>
-                    <h3>Matemática</h3>
-                    <p>Resolvé problemas complejos con el poder de los números.</p>
-                    <div class="salidas">
-                        <strong>Salidas laborales:</strong>
-                        <ul>
-                            <li>Analista de datos</li>
-                            <li>Actuaria</li>
-                            <li>Investigadora científica</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="carrera-card">
-                    <div class="card-icon">
-                        <i class="fas fa-atom"></i>
-                    </div>
-                    <h3>Física</h3>
-                    <p>Entendé las leyes fundamentales del universo.</p>
-                    <div class="salidas">
-                        <strong>Salidas laborales:</strong>
-                        <ul>
-                            <li>Física médica</li>
-                            <li>Investigación espacial</li>
-                            <li>Energías renovables</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="carrera-card">
-                    <div class="card-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <h3>Química</h3>
-                    <p>Transformá la materia para crear nuevos materiales y medicamentos.</p>
-                    <div class="salidas">
-                        <strong>Salidas laborales:</strong>
-                        <ul>
-                            <li>Química farmacéutica</li>
-                            <li>Ingeniería de procesos</li>
-                            <li>Control de calidad</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="carrera-card">
-                    <div class="card-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Ingeniería Industrial</h3>
-                    <p>Optimizá procesos y sistemas para máxima eficiencia.</p>
-                    <div class="salidas">
-                        <strong>Salidas laborales:</strong>
-                        <ul>
-                            <li>Consultora de procesos</li>
-                            <li>Gerenta de operaciones</li>
-                            <li>Analista de productividad</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <svg class="animated-svg" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:0.3" />
+                        <stop offset="100%" style="stop-color:#A855F7;stop-opacity:0.1" />
+                    </linearGradient>
+                </defs>
+                
+                <!-- Circuitos y conexiones tech -->
+                <g class="tech-circuits">
+                    <circle cx="150" cy="100" r="8" fill="#C084FC" opacity="0.6">
+                        <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="650" cy="150" r="6" fill="#8B5CF6" opacity="0.6">
+                        <animate attributeName="r" values="6;10;6" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="200" cy="450" r="10" fill="#DDD6FE" opacity="0.8">
+                        <animate attributeName="r" values="10;15;10" dur="4s" repeatCount="indefinite"/>
+                    </circle>
+                    
+                    <!-- Líneas conectoras animadas -->
+                    <path d="M150,100 Q400,50 650,150" stroke="#A855F7" stroke-width="2" fill="none" opacity="0.3">
+                        <animate attributeName="stroke-dasharray" values="0,1000;1000,0" dur="5s" repeatCount="indefinite"/>
+                    </path>
+                    <path d="M200,450 Q500,300 650,150" stroke="#C084FC" stroke-width="2" fill="none" opacity="0.3">
+                        <animate attributeName="stroke-dasharray" values="0,800;800,0" dur="4s" repeatCount="indefinite"/>
+                    </path>
+                </g>
+                
+                <!-- Elementos científicos -->
+                <g class="science-elements">
+                    <!-- Molécula animada -->
+                    <g transform="translate(600,400)">
+                        <circle cx="0" cy="0" r="15" fill="#8B5CF6" opacity="0.4">
+                            <animateTransform attributeName="transform" type="rotate" values="0;360" dur="10s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="30" cy="0" r="10" fill="#A855F7" opacity="0.4">
+                            <animateTransform attributeName="transform" type="rotate" values="0;360" dur="8s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="-20" cy="25" r="12" fill="#C084FC" opacity="0.4">
+                            <animateTransform attributeName="transform" type="rotate" values="0;360" dur="12s" repeatCount="indefinite"/>
+                        </circle>
+                        <line x1="0" y1="0" x2="30" y2="0" stroke="#DDD6FE" stroke-width="2" opacity="0.3"/>
+                        <line x1="0" y1="0" x2="-20" y2="25" stroke="#DDD6FE" stroke-width="2" opacity="0.3"/>
+                    </g>
+                    
+                    <!-- Engranajes -->
+                    <g transform="translate(100,350)">
+                        <circle cx="0" cy="0" r="25" fill="none" stroke="#8B5CF6" stroke-width="3" opacity="0.3">
+                            <animateTransform attributeName="transform" type="rotate" values="0;360" dur="6s" repeatCount="indefinite"/>
+                        </circle>
+                        <circle cx="0" cy="0" r="15" fill="#A855F7" opacity="0.2">
+                            <animateTransform attributeName="transform" type="rotate" values="360;0" dur="6s" repeatCount="indefinite"/>
+                        </circle>
+                    </g>
+                </g>
+                
+                <!-- Partículas flotantes -->
+                <g class="floating-particles">
+                    <circle cx="300" cy="80" r="3" fill="#C084FC" opacity="0.6">
+                        <animate attributeName="cy" values="80;60;80" dur="3s" repeatCount="indefinite"/>
+                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="500" cy="200" r="4" fill="#8B5CF6" opacity="0.5">
+                        <animate attributeName="cy" values="200;180;200" dur="4s" repeatCount="indefinite"/>
+                        <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
+                    </circle>
+                    <circle cx="80" cy="250" r="2" fill="#DDD6FE" opacity="0.7">
+                        <animate attributeName="cy" values="250;230;250" dur="2.5s" repeatCount="indefinite"/>
+                        <animate attributeName="opacity" values="0.7;1;0.7" dur="1.5s" repeatCount="indefinite"/>
+                    </circle>
+                </g>
+            </svg>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Desafio STEM</h1>
+            <p class="hero-subtitle">Ciencia • Tecnología • Ingeniería • Matemáticas</p>
+            <p class="hero-description">
+                Descubre un mundo de posibilidades infinitas donde tu curiosidad y pasión por crear pueden transformar el futuro. Las mujeres en STEM estamos cambiando el mundo, ¡únete a nosotras!
+            </p>
+            <a href="#carreras" class="cta-button" id="exploreBtn">Explorar Carreras</a>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
         </div>
     </section>
+    </header> 
 
     <!-- Sección 2: STEM en tu vida diaria -->
     <section id="vida-diaria" class="vida-diaria-section">
@@ -256,46 +255,36 @@
     <section id="recursos" class="recursos-section">
         <div class="container">
             <h2 class="section-title">Recursos para empezar tu camino</h2>
-            <p class="section-subtitle">Todo lo que necesitás para dar tus primeros pasos en STEM</p>
+            <p class="section-subtitle">Encuentra becas, podcasts inspiradores, comunidades y más para impulsar tu camino en ciencia y tecnología.</p>
             
             <div class="recursos-grid">
                 <div class="recurso-category">
-                    <h3><i class="fas fa-graduation-cap"></i> Cursos gratuitos</h3>
+                    <h3><i class="fas fa-graduation-cap"></i> Becas y Financiamiento</h3>
                     <ul>
-                        <li><a href="#" target="_blank">Coursera - Introducción a la Programación</a></li>
-                        <li><a href="#" target="_blank">Khan Academy - Matemática y Ciencias</a></li>
-                        <li><a href="#" target="_blank">edX - Cursos de MIT y Harvard</a></li>
-                        <li><a href="#" target="_blank">Codecademy - Programación interactiva</a></li>
+                        <li><a href="https://becas.fundacionypf.org/" target="_blank">Fundación YPF – Becas Universitarias</a></li>
+                        <li><a href="https://tecnolochicas.mx/#convocatorias" target="_blank">TechnoloChicas</a></li>
+                        <li><a href="https://bootcamp.laboratoria.la/es/" target="_blank">Laboratoria</a></li>
+                        <li><a href="https://opportunitydesk.org/" target="_blank">Programas de Financiamiento Global</a></li>
                     </ul>
                 </div>
 
                 <div class="recurso-category">
-                    <h3><i class="fas fa-award"></i> Becas y oportunidades</h3>
+                    <h3><i class="fas fa-award"></i> Comunidades</h3>
                     <ul>
-                        <li><a href="#" target="_blank">Becas Progresar - Gobierno Nacional</a></li>
-                        <li><a href="#" target="_blank">Programa Igualdad de Oportunidades - UBA</a></li>
-                        <li><a href="#" target="_blank">Girls in Tech Argentina</a></li>
-                        <li><a href="#" target="_blank">Women in STEM - UNESCO</a></li>
+                        <li><a href="https://chicasentecnologia.org/comunidad/" target="_blank">Chicas en Tecnología (CET)</a></li>
+                        <li><a href="https://latinasintech.org/about" target="_blank">Latinas in Tech</a></li>
+                        <li><a href="https://pyladies.com/" target="_blank">Pyladies</a></li>
+                        <li><a href="https://geekgirlslatam.org/" target="_blank">Geek Girls LatAm</a></li>
                     </ul>
                 </div>
 
                 <div class="recurso-category">
-                    <h3><i class="fas fa-book"></i> Libros recomendados</h3>
+                    <h3><i class="fas fa-book"></i> Podcasts y Contenido Inspirador</h3>
                     <ul>
-                        <li>"Las chicas son de ciencias" - Irene Cívico</li>
-                        <li>"Mujeres de ciencia" - Rachel Ignotofsky</li>
-                        <li>"El gen egoísta" - Richard Dawkins</li>
-                        <li>"Pensar rápido, pensar despacio" - Daniel Kahneman</li>
-                    </ul>
-                </div>
-
-                <div class="recurso-category">
-                    <h3><i class="fas fa-podcast"></i> Podcasts y videos</h3>
-                    <ul>
-                        <li><a href="#" target="_blank">Cienciaes - Podcast científico</a></li>
-                        <li><a href="#" target="_blank">TED Talks - Mujeres en STEM</a></li>
-                        <li><a href="#" target="_blank">YouTube - Date un Voltio</a></li>
-                        <li><a href="#" target="_blank">Spotify - Científicamente</a></li>
+                        <li><a href="https://clauqsi.com/#" target="_blank">Clau, quiero ser ingeniera</a></li>
+                        <li><a href="https://www.ted.com/" target="_blank">Ted Talks</a></li>
+                        <li><a href="https://www.youtube.com/@enteoriaok" target="_blank">En Teoría</a></li>
+                        <li><a href="https://open.spotify.com/show/5CYZLznDiDMmBidpte0wrm" target="_blank">Mujeres en la Ciencia</a></li>
                     </ul>
                 </div>
             </div>
@@ -306,62 +295,61 @@
     <section id="universidades" class="universidades-section">
         <div class="container">
             <h2 class="section-title">Universidades argentinas con carreras STEM</h2>
-            <p class="section-subtitle">Encontrá la institución perfecta para tu futuro</p>
+            <p class="section-subtitle">Aquí puedes encontrar algunas universidades destacadas con programas STEM. Para una exploración detallada de carreras y misiones, visita nuestra sección Explorar Carreras y Misiones.</p>
             
-            <div class="universidades-grid">
-                <div class="uni-card">
+            <a href="https://www.uba.ar/" target="_blank" class="uni-card">
                     <h3>Universidad de Buenos Aires (UBA)</h3>
                     <p>Facultades de Ciencias Exactas, Ingeniería y Medicina</p>
                     <div class="uni-info">
                         <span class="uni-type">Pública</span>
                         <span class="uni-location">CABA</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="uni-card">
-                    <h3>Universidad Tecnológica Nacional (UTN)</h3>
+            <a href="https://utn.edu.ar/es/" target="_blank" class="uni-card">
+                    <h3>Universidad Tecnológica Nacional(UTN)</h3>
                     <p>Especializada en ingeniería y tecnología</p>
                     <div class="uni-info">
                         <span class="uni-type">Pública</span>
                         <span class="uni-location">Nacional</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="uni-card">
+            <a href="https://www.unlp.edu.ar/" target="_blank" class="uni-card">
                     <h3>Universidad Nacional de La Plata (UNLP)</h3>
                     <p>Facultades de Ciencias Exactas, Ingeniería e Informática</p>
                     <div class="uni-info">
                         <span class="uni-type">Pública</span>
                         <span class="uni-location">La Plata</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="uni-card">
+            <a href="https://www.unc.edu.ar/" target="_blank" class="uni-card">
                     <h3>Universidad Nacional de Córdoba (UNC)</h3>
                     <p>Facultad de Matemática, Astronomía, Física y Computación</p>
                     <div class="uni-info">
                         <span class="uni-type">Pública</span>
                         <span class="uni-location">Córdoba</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="uni-card">
+            <a href="https://www.itba.edu.ar/" target="_blank" class="uni-card">
                     <h3>Instituto Tecnológico de Buenos Aires (ITBA)</h3>
                     <p>Universidad privada enfocada en ingeniería y tecnología</p>
                     <div class="uni-info">
                         <span class="uni-type">Privada</span>
                         <span class="uni-location">CABA</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="uni-card">
+            <a href="https://www.austral.edu.ar/" target="_blank" class="uni-card">
                     <h3>Universidad Austral</h3>
                     <p>Facultad de Ingeniería y Ciencias Exactas</p>
                     <div class="uni-info">
                         <span class="uni-type">Privada</span>
                         <span class="uni-location">Buenos Aires</span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -399,6 +387,6 @@
     </footer>
 
     <!-- Script JavaScript -->
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
