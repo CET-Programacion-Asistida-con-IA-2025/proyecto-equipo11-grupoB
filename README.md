@@ -35,9 +35,23 @@ Este proyecto se alinea con los siguientes objetivos de la Agenda 2030:
 
 ## 📁 Estructura del Proyecto
 
-- `index.html`: Página principal del sitio
-- `styles.css`: Estilos personalizados
-- `script.js`: Lógica de comportamiento dinámico
+STEM-para-Vos/
+│
+├── index.html              # Página de inicio con animaciones STEM y navegación principal
+├── carreras.html           # Sección de carreras recomendadas con mini-misiones y recursos
+├── foro.html               # Foro de discusión con categorías, posts y creación de contenido
+│
+├── css/
+│   ├── styles.css          # Estilos generales y diseño global del sitio
+│   ├── carreras.css        # Estilos específicos para la página de carreras
+│   ├── foro.css            # Estilos específicos para el foro
+│
+├── js/
+│   ├── script.js           # Lógica del test vocacional
+│   ├── carreras.js         # Datos dinámicos y lógica de las carreras STEM
+│   ├── foro.js             # Lógica de navegación, creación y visualización de posts del foro
+│
+└── README.md               # Descripción del proyecto (este archivo)
 
 ## ✨ Funcionalidades Destacadas
 
