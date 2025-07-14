@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro STEM para Vos</title>
+    <link rel="stylesheet" href="css/foro.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <h1>🧬 Foro STEM para Vos</h1>
+            <p>Conecta, aprende y comparte con la comunidad STEM</p>
+        </div>
+    </div>
+
+    <div class="forum-nav">
+        <div class="container">
+            <div class="nav-tabs">
+                <button class="nav-tab active" onclick="showSection('categories', event)">🏠 Inicio</button>
+                <button class="nav-tab" onclick="showSection('posts', event)">💬 Discusiones</button>
+                <button class="nav-tab" onclick="showSection('create', event)">✍️ Crear Post</button>
+                <button class="nav-tab" onclick="showSection('profile', event)">👤 Mi Perfil</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="container">
+            <!-- Sección de Categorías -->
+            <div id="categories" class="forum-section active">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: var(--azul-oscuro); font-size: 2rem;">Categorías del Foro</h2>
+                <div class="categories-grid">
+                    <div class="category-card" onclick="showPosts('matematicas')">
+                        <div class="category-icon">🧮</div>
+                        <h3>Matemáticas</h3>
+                        <p>Álgebra, cálculo, estadística y más</p>
+                        <div class="category-stats">
+                            <span class="stat">147 posts</span>
+                            <span class="stat">89 miembros</span>
+                        </div>
+                    </div>
+                    <div class="category-card" onclick="showPosts('programacion')">
+                        <div class="category-icon">💻</div>
+                        <h3>Programación</h3>
+                        <p>Python, JavaScript, algoritmos y desarrollo</p>
+                        <div class="category-stats">
+                            <span class="stat">203 posts</span>
+                            <span class="stat">156 miembros</span>
+                        </div>
+                    </div>
+                    <div class="category-card" onclick="showPosts('ciencias')">
+                        <div class="category-icon">🔬</div>
+                        <h3>Ciencias</h3>
+                        <p>Física, química, biología y experimentos</p>
+                        <div class="category-stats">
+                            <span class="stat">98 posts</span>
+                            <span class="stat">67 miembros</span>
+                        </div>
+                    </div>
+                    <div class="category-card" onclick="showPosts('ingenieria')">
+                        <div class="category-icon">⚙️</div>
+                        <h3>Ingeniería</h3>
+                        <p>Proyectos, diseño y tecnología</p>
+                        <div class="category-stats">
+                            <span class="stat">132 posts</span>
+                            <span class="stat">94 miembros</span>
+                        </div>
+                    </div>
+                    <div class="category-card" onclick="showPosts('carreras')">
+                        <div class="category-icon">🎓</div>
+                        <h3>Orientación Vocacional</h3>
+                        <p>Carreras, universidades y experiencias</p>
+                        <div class="category-stats">
+                            <span class="stat">176 posts</span>
+                            <span class="stat">234 miembros</span>
+                        </div>
+                    </div>
+                    <div class="category-card" onclick="showPosts('proyectos')">
+                        <div class="category-icon">🚀</div>
+                        <h3>Proyectos</h3>
+                        <p>Comparte tus creaciones y colabora</p>
+                        <div class="category-stats">
+                            <span class="stat">85 posts</span>
+                            <span class="stat">78 miembros</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de Posts -->
+            <div id="posts" class="forum-section">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: var(--azul-oscuro); font-size: 2rem;">Discusiones Recientes</h2>
+                <div class="posts-container">
+                    <div class="post-item" onclick="showPost('post1')">
+                        <div class="post-header">
+                            <div>
+                                <div class="post-title">¿Cómo resolver integrales complejas?</div>
+                                <div class="post-meta">
+                                    <span>👤 MathLover23</span>
+                                    <span>⏰ hace 2 horas</span>
+                                    <span class="post-tag">Matemáticas</span>
+                                </div>
+                            </div>
+                            <div class="post-stats">
+                                <span>💬 12 respuestas</span>
+                                <span>❤️ 8 likes</span>
+                        </div>
+                    </div>
+                        <p>Estoy teniendo problemas con las integrales por partes. ¿Alguien puede explicarme un método más sencillo?</p>
+                    </div>
+
+                    <div class="post-item" onclick="showPost('post2')">
+                        <div class="post-header">
+                            <div>
+                                <div class="post-title">Mi primer proyecto en Python 🐍</div>
+                                <div class="post-meta">
+                                    <span>👤 CodeNewbie</span>
+                                    <span>⏰ hace 5 horas</span>
+                                    <span class="post-tag">Programación</span>
+                                </div>
+                            </div>
+                            <div class="post-stats">
+                                <span>💬 25 respuestas</span>
+                                <span>❤️ 23 likes</span>
+                        </div>
+                    </div>
+                        <p>¡Hola! Quiero compartir mi primera calculadora en Python. Me encantaría recibir feedback.</p>
+                    </div>
+
+                    <div class="post-item" onclick="showPost('post3')">
+                        <div class="post-header">
+                            <div>
+                                <div class="post-title">Experimento de química casero fallido 😅</div>
+                                <div class="post-meta">
+                                    <span>👤 ScienceGirl</span>
+                                    <span>⏰ hace 1 día</span>
+                                    <span class="post-tag">Ciencias</span>
+                                </div>
+                            </div>
+                            <div class="post-stats">
+                                <span>💬 18 respuestas</span>
+                                <span>❤️ 32 likes</span>
+                            </div>
+                        </div>
+                        <p>Intenté hacer un volcán de bicarbonato pero algo salió mal. ¿Qué pudo haber pasado?</p>
+                    </div>
+
+                    <div class="post-item" onclick="showPost('post4')">
+                        <div class="post-header">
+                            <div>
+                                <div class="post-title">¿Vale la pena estudiar Ingeniería en Sistemas?</div>
+                                <div class="post-meta">
+                                    <span>👤 FutureEngineer</span>
+                                    <span>⏰ hace 2 días</span>
+                                    <span class="post-tag">Orientación Vocacional</span>
+                                </div>
+                            </div>
+                            <div class="post-stats">
+                                <span>💬 67 respuestas</span>
+                                <span>❤️ 89 likes</span>
+                            </div>
+                        </div>
+                        <p>Estoy entre Ingeniería en Sistemas y Ciencias de la Computación. ¿Cuál recomiendan?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Formulario de Crear Post -->
+            <div id="create" class="forum-section">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: var(--azul-oscuro); font-size: 2rem;">Crear Nuevo Post</h2>
+                <form class="new-post-form" onsubmit="createPost(event)">
+                    <div class="form-group">
+                        <label for="post-category">Categoría</label>
+                        <select id="post-category" required>
+                            <option value="">Selecciona una categoría</option>
+                            <option value="matematicas">🧮 Matemáticas</option>
+                            <option value="programacion">💻 Programación</option>
+                            <option value="ciencias">🔬 Ciencias</option>
+                            <option value="ingenieria">⚙️ Ingeniería</option>
+                            <option value="carreras">🎓 Orientación Vocacional</option>
+                            <option value="proyectos">🚀 Proyectos</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="post-title">Título del Post</label>
+                        <input type="text" id="post-title" placeholder="Escribe un título atractivo..." required>
+                    </div>
+                    <div class="form-group">
+                        <label for="post-content">Contenido</label>
+                        <textarea id="post-content" placeholder="Comparte tu pregunta, proyecto o experiencia..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="post-tags">Tags (opcional)</label>
+                        <input type="text" id="post-tags" placeholder="Ej: python, principiante, ayuda">
+                    </div>
+                    <button type="submit" class="btn-primary">📝 Publicar Post</button>
+                    <button type="button" class="btn-secondary" onclick="clearForm()">🗑️ Limpiar</button>
+                </form>
+            </div>
+
+            <!-- Perfil de Usuario -->
+            <div id="profile" class="forum-section">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: var(--azul-oscuro); font-size: 2rem;">Mi Perfil</h2>
+                <div class="posts-container">
+                    <div style="text-align: center; padding: 2rem;">
+                        <div style="width: 120px; height: 120px; background: linear-gradient(135deg, var(--violeta), var(--lila-suave)); border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center; font-size: 3rem;">
+                            👤
+                        </div>
+                        <h3 style="color: var(--azul-oscuro); margin-bottom: 1rem;">STEMUser2024</h3>
+                        <p style="color: var(--gris-grafito); margin-bottom: 2rem;">Estudiante de Ingeniería en Sistemas</p>
+                        <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+                            <div class="stat" style="background: var(--lila-suave); padding: 1rem; border-radius: 10px;">
+                                <strong>Posts:</strong> 23
+                            </div>
+                            <div class="stat" style="background: var(--lila-suave); padding: 1rem; border-radius: 10px;">
+                                <strong>Respuestas:</strong> 89
+                            </div>
+                            <div class="stat" style="background: var(--lila-suave); padding: 1rem; border-radius: 10px;">
+                                <strong>Likes:</strong> 156
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/foro.js"></script>
+</body>
+</html>
